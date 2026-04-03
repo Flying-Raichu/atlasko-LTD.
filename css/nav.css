@@ -16,11 +16,12 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.12em;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .nav-logo span {
   color: var(--accent);
@@ -47,9 +48,11 @@ nav {
 .nav-cta {
   background: var(--accent);
   color: #ffffff;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Raleway', sans-serif;
   letter-spacing: 0.1em;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
   padding: 0.55rem 1.4rem;
   border: none;
   cursor: pointer;
