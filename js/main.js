@@ -17,20 +17,3 @@ window.addEventListener('scroll', () => {
     nav.style.padding = '1.25rem 4rem';
   }
 });
-
-/* Hamburger menu toggle */
-const hamburger = document.querySelector('.nav-hamburger');
-const navLinks  = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
-
-/* Close menu when a nav link is clicked */
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
-});
