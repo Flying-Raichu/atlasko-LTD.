@@ -27,16 +27,16 @@ html {
 body {
   background: var(--ink);
   color: var(--frost);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   line-height: 1.65;
   overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.06em;
-  font-weight: 800;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ section {
   color: var(--accent);
   font-weight: 500;
   margin-bottom: 0.75rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Shared section title */
@@ -76,7 +76,7 @@ section {
 .btn-primary {
   background: var(--accent);
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -96,7 +96,7 @@ section {
 .btn-ghost {
   border: 1px solid var(--graphite);
   color: var(--silver);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;

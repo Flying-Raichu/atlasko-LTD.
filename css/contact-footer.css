@@ -45,7 +45,7 @@
 }
 
 .contact-val {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
   color: var(--frost);
   letter-spacing: 0.05em;
@@ -67,7 +67,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 0.1em;
   font-size: 1.1rem;
   color: var(--mid);
