@@ -11,7 +11,6 @@ nav {
   border-bottom: 1px solid rgba(0,35,102,0.12);
 }
 
-/* Row containing logo + links + cta */
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -31,7 +30,6 @@ nav {
   color: var(--accent);
 }
 
-/* Desktop link list — sits inside nav-inner */
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -67,36 +65,27 @@ nav {
   background: var(--frost);
 }
 
-/* Hamburger — hidden on desktop */
-.nav-hamburger {
-  display: none;
-}
-
-/* Mobile dropdown — hidden on desktop */
-.nav-mobile-menu {
-  display: none;
-}
+/* Always hidden — shown only in mobile media query */
+.nav-hamburger { display: none; }
+.nav-mobile-menu { display: none; }
 
 /* ============================================================
-   MOBILE NAV  (≤768px)
+   MOBILE  ≤768px
    ============================================================ */
 
 @media (max-width: 768px) {
+
   .nav-inner {
     padding: 0.9rem 1.25rem;
   }
 
-  /* Hide desktop links and CTA inside the row */
-  .nav-links {
-    display: none;
-  }
-  .nav-cta {
-    display: none;
-  }
+  /* Kill desktop elements */
+  .nav-inner .nav-links { display: none !important; }
+  .nav-cta              { display: none !important; }
 
   /* Show hamburger */
   .nav-hamburger {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
@@ -113,27 +102,24 @@ nav {
     transition: all 0.25s;
     transform-origin: center;
   }
-  .nav-hamburger.open span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .nav-hamburger.open span:nth-child(2) {
-    opacity: 0;
-  }
-  .nav-hamburger.open span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-  /* Mobile dropdown — sibling of nav-inner, drops below it */
+  /* Dropdown sits below nav-inner, inside <nav> so it inherits z-index */
   .nav-mobile-menu {
-    display: none;
-    flex-direction: column;
     list-style: none;
     background: var(--ink);
     border-top: 1px solid rgba(0,35,102,0.08);
-    border-bottom: 2px solid rgba(0,35,102,0.15);
+    border-bottom: 2px solid rgba(0,35,102,0.18);
+    /* Hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
   .nav-mobile-menu.open {
-    display: flex;
+    display: block !important;
+    max-height: 400px;
   }
   .nav-mobile-menu li {
     border-bottom: 1px solid rgba(0,35,102,0.06);
@@ -142,7 +128,7 @@ nav {
     display: block;
     padding: 1rem 1.25rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
