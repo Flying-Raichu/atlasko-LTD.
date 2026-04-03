@@ -10,9 +10,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 4rem;
-  background: rgba(13,13,13,0.88);
+  background: rgba(244,244,242,0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(200,169,110,0.15);
+  border-bottom: 1px solid rgba(0,35,102,0.12);
 }
 
 .nav-logo {
@@ -20,6 +20,7 @@ nav {
   font-size: 1.4rem;
   letter-spacing: 0.12em;
   color: var(--white);
+  font-weight: 700;
 }
 .nav-logo span {
   color: var(--accent);
@@ -45,7 +46,7 @@ nav {
 
 .nav-cta {
   background: var(--accent);
-  color: var(--ink);
+  color: var(--white);
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.1em;
   font-size: 0.9rem;

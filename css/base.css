@@ -9,15 +9,15 @@
 }
 
 :root {
-  --ink:      #0d0d0d;
-  --coal:     #181818;
-  --steel:    #242424;
-  --graphite: #383838;
-  --mid:      #6a6a6a;
-  --silver:   #b4b4b4;
-  --frost:    #e8e8e8;
-  --white:    #f5f5f0;
-  --accent:   #c8a96e;
+  --ink:      #f4f4f2;
+  --coal:     #ebebea;
+  --steel:    #e0e0de;
+  --graphite: #c8c8c6;
+  --mid:      #888887;
+  --silver:   #555554;
+  --frost:    #2a2a28;
+  --white:    #111110;
+  --accent:   #002366;
 }
 
 html {
@@ -74,7 +74,7 @@ section {
 /* Shared buttons */
 .btn-primary {
   background: var(--accent);
-  color: var(--ink);
+  color: var(--white);
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.12em;
