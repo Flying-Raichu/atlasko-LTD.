@@ -83,6 +83,15 @@ footer p {
 
 @media (max-width: 768px) {
   footer {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.25rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .cta-contact {
+    gap: 2rem;
+  }
+  .contact-val {
+    font-size: 1.1rem;
   }
 }

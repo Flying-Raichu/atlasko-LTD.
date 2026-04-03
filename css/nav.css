@@ -64,9 +64,13 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.25rem;
   }
   .nav-links {
     display: none;
+  }
+  .nav-cta {
+    font-size: 0.72rem;
+    padding: 0.5rem 1rem;
   }
 }
