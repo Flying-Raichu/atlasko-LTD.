@@ -1,0 +1,43 @@
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+
+.testimonials {
+  background: var(--coal);
+}
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.testi-card {
+  background: var(--steel);
+  padding: 2rem;
+  border-left: 3px solid var(--accent);
+}
+
+.testi-text {
+  font-size: 0.92rem;
+  color: var(--silver);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testi-author {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+  font-weight: 500;
+}
+.testi-author strong {
+  color: var(--frost);
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+}

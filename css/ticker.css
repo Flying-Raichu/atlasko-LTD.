@@ -1,0 +1,35 @@
+/* ============================================================
+   TICKER — scrolling services strip between hero and services
+   ============================================================ */
+
+.ticker {
+  background: var(--coal);
+  border-top: 1px solid var(--graphite);
+  border-bottom: 1px solid var(--graphite);
+  padding: 0.9rem 0;
+  overflow: hidden;
+}
+
+.ticker-inner {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.ticker-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--mid);
+  text-transform: uppercase;
+}
+.ticker-item span {
+  color: var(--accent);
+  margin-right: 4rem;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

@@ -1,0 +1,93 @@
+/* ============================================================
+   WHY US
+   ============================================================ */
+
+.why {
+  background: var(--ink);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Numbered feature list */
+.why-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.why-feature {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.feature-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  color: var(--graphite);
+  line-height: 1;
+  min-width: 44px;
+}
+
+.feature-text h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+.feature-text p {
+  font-size: 0.85rem;
+  color: var(--mid);
+}
+
+/* Credentials panel */
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--graphite);
+  margin-top: 0.5rem;
+}
+
+.cred-row {
+  background: var(--coal);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.4rem 1.5rem;
+}
+
+.cred-icon {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border: 1px solid var(--graphite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cred-text strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+}
+.cred-text span {
+  font-size: 0.78rem;
+  color: var(--mid);
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

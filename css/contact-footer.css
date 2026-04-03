@@ -1,0 +1,88 @@
+/* ============================================================
+   CONTACT (CTA section)
+   ============================================================ */
+
+.cta-section {
+  background: var(--steel);
+  text-align: center;
+  border-top: 1px solid var(--graphite);
+}
+
+.cta-section h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--mid);
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+
+.cta-contact {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--graphite);
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.contact-val {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--frost);
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+  background: var(--ink);
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  color: var(--mid);
+}
+.footer-logo span {
+  color: var(--accent);
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: var(--graphite);
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 1.5rem;
+  }
+}

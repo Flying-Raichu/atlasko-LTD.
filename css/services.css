@@ -1,0 +1,57 @@
+/* ============================================================
+   SERVICES
+   ============================================================ */
+
+.services {
+  background: var(--coal);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--graphite);
+}
+
+.service-card {
+  background: var(--coal);
+  padding: 2.5rem 2rem;
+  transition: background 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent underline that slides in on hover */
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+.service-card:hover {
+  background: var(--steel);
+}
+.service-card:hover::after {
+  width: 100%;
+}
+
+.service-icon {
+  width: 44px; height: 44px;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 0.88rem;
+  color: var(--mid);
+  line-height: 1.7;
+}
