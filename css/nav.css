@@ -11,6 +11,7 @@ nav {
   border-bottom: 1px solid rgba(0,35,102,0.12);
 }
 
+/* Row containing logo + links + cta */
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,7 @@ nav {
   color: var(--accent);
 }
 
+/* Desktop link list — sits inside nav-inner */
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -70,50 +72,29 @@ nav {
   display: none;
 }
 
+/* Mobile dropdown — hidden on desktop */
+.nav-mobile-menu {
+  display: none;
+}
+
 /* ============================================================
-   MOBILE NAV
+   MOBILE NAV  (≤768px)
    ============================================================ */
 
 @media (max-width: 768px) {
   .nav-inner {
-    padding: 1rem 1.25rem;
+    padding: 0.9rem 1.25rem;
   }
 
+  /* Hide desktop links and CTA inside the row */
+  .nav-links {
+    display: none;
+  }
   .nav-cta {
     display: none;
   }
 
-  /* On mobile, nav-links moves out of the flex row
-     and becomes a dropdown below the nav bar */
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0; right: 0;
-    flex-direction: column;
-    gap: 0;
-    background: var(--ink);
-    border-bottom: 2px solid rgba(0,35,102,0.15);
-    list-style: none;
-  }
-  .nav-links.open {
-    display: flex;
-  }
-  .nav-links li {
-    border-bottom: 1px solid rgba(0,35,102,0.06);
-  }
-  .nav-links a {
-    display: block;
-    padding: 1rem 1.25rem;
-    font-size: 0.95rem;
-    color: var(--white);
-    letter-spacing: 0.1em;
-  }
-  .nav-links a:hover {
-    background: var(--coal);
-    color: var(--accent);
-  }
-
+  /* Show hamburger */
   .nav-hamburger {
     display: flex;
     flex-direction: column;
@@ -140,5 +121,37 @@ nav {
   }
   .nav-hamburger.open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Mobile dropdown — sibling of nav-inner, drops below it */
+  .nav-mobile-menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background: var(--ink);
+    border-top: 1px solid rgba(0,35,102,0.08);
+    border-bottom: 2px solid rgba(0,35,102,0.15);
+  }
+  .nav-mobile-menu.open {
+    display: flex;
+  }
+  .nav-mobile-menu li {
+    border-bottom: 1px solid rgba(0,35,102,0.06);
+  }
+  .nav-mobile-menu a {
+    display: block;
+    padding: 1rem 1.25rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-mobile-menu a:hover {
+    background: var(--coal);
+    color: var(--accent);
   }
 }
