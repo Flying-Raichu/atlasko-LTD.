@@ -46,7 +46,7 @@ nav {
 
 .nav-cta {
   background: var(--accent);
-  color: var(--white);
+  color: #ffffff;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.1em;
   font-size: 0.9rem;
