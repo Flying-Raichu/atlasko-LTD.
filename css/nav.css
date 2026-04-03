@@ -5,14 +5,17 @@
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 200;
+  background: rgba(244,244,242,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,35,102,0.12);
+}
+
+.nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 4rem;
-  background: rgba(244,244,242,0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0,35,102,0.12);
 }
 
 .nav-logo {
@@ -62,7 +65,7 @@ nav {
   background: var(--frost);
 }
 
-/* Hamburger — hidden by default, shown only on mobile */
+/* Hamburger — hidden on desktop */
 .nav-hamburger {
   display: none;
 }
@@ -72,7 +75,7 @@ nav {
    ============================================================ */
 
 @media (max-width: 768px) {
-  nav {
+  .nav-inner {
     padding: 1rem 1.25rem;
   }
 
@@ -80,24 +83,35 @@ nav {
     display: none;
   }
 
+  /* On mobile, nav-links moves out of the flex row
+     and becomes a dropdown below the nav bar */
   .nav-links {
     display: none;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(244,244,242,0.98);
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    z-index: 99;
+    gap: 0;
+    background: var(--ink);
+    border-bottom: 2px solid rgba(0,35,102,0.15);
+    list-style: none;
   }
   .nav-links.open {
     display: flex;
   }
+  .nav-links li {
+    border-bottom: 1px solid rgba(0,35,102,0.06);
+  }
   .nav-links a {
-    font-size: 1.4rem;
-    letter-spacing: 0.15em;
+    display: block;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
     color: var(--white);
+    letter-spacing: 0.1em;
+  }
+  .nav-links a:hover {
+    background: var(--coal);
+    color: var(--accent);
   }
 
   .nav-hamburger {
@@ -109,7 +123,6 @@ nav {
     border: none;
     cursor: pointer;
     padding: 4px;
-    z-index: 101;
   }
   .nav-hamburger span {
     display: block;

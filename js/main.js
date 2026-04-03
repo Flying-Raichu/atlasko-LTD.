@@ -3,6 +3,7 @@
    ============================================================ */
 
 const nav       = document.querySelector('nav');
+const navInner  = document.querySelector('.nav-inner');
 const hamburger = document.querySelector('.nav-hamburger');
 const navLinks  = document.querySelector('.nav-links');
 
@@ -11,10 +12,10 @@ document.querySelector('.nav-cta').addEventListener('click', () => {
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 });
 
-/* Shrink nav on scroll — desktop only, so mobile padding isn't overridden */
+/* Shrink nav on scroll — desktop only */
 window.addEventListener('scroll', () => {
   if (window.innerWidth > 768) {
-    nav.style.padding = window.scrollY > 60 ? '0.75rem 4rem' : '1.25rem 4rem';
+    navInner.style.padding = window.scrollY > 60 ? '0.75rem 4rem' : '1.25rem 4rem';
   }
 });
 
