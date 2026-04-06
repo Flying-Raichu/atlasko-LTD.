@@ -19,15 +19,14 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.12em;
-  color: var(--white);
-  font-weight: 800;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo span {
-  color: var(--accent);
+.nav-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {

@@ -66,14 +66,10 @@ footer {
   gap: 1rem;
 }
 
-.footer-logo {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 1.1rem;
-  color: var(--mid);
-}
-.footer-logo span {
-  color: var(--accent);
+.footer-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 footer p {
