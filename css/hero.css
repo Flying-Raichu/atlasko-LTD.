@@ -129,7 +129,7 @@
     padding: 7rem 1.25rem 2.5rem;
   }
   .hero-image {
-    display: none;
+    display: none !important;
   }
   .hero h1 {
     font-size: clamp(2.4rem, 10vw, 3.5rem);
